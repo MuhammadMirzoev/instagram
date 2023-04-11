@@ -11,7 +11,7 @@ def register():
         password = request.form['password']
         print(1)
         # Добавляем пользователя в базу данных
-        conn = sqlite3.connect('users.db')
+        conn = sqlite3.connect('db/users.db')
         print(11)
         cursor = conn.cursor()
         print(2222)
